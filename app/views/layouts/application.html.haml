@@ -8,6 +8,18 @@
     = csrf_meta_tags
   %body
     .container
+      %nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            %a.navbar-brand{:href => "#"} TuDu
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            - if user_signed_in?
+              = link_to destroy_user_session_path, method: :delete do
+                %button.btn.btn-default.navbar-btn.navbar-right{:type => "button"} Log out
+            - else
+              = link_to new_user_session_path do
+                %button.btn.btn-default.navbar-btn.navbar-right{:type => "button"} Sign in
       %p.notice= notice
       %p.alert= alert
       = yield
+
