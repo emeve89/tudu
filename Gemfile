@@ -15,6 +15,8 @@ gem 'devise'
 
 gem 'bootstrap-sass', '~> 3.3.3'
 gem "haml-rails", "~> 0.9"
+gem 'formtastic'
+gem 'formtastic-bootstrap'
 
 group :development, :test do
   gem 'byebug'
