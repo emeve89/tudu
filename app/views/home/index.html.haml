@@ -1,2 +1,7 @@
 %h1
   Hi there!
+
+- if current_user
+  = semantic_form_for Todo.new do |f|
+    = f.input :content
+    = f.submit
