@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 
 gem 'bootstrap-sass', '~> 3.3.3'
+gem "haml-rails", "~> 0.9"
 
 group :development, :test do
   gem 'byebug'
