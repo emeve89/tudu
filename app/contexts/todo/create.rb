@@ -1,6 +1,4 @@
 class Todo::Create
-  extend Forwardable
-  def_delegator :@listener, :redirect_to, :root_path
 
   def initialize(user, listener)
     @listener = listener
